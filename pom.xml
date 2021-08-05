@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <name>Template de automacao unico</name>
+    <description>Projeto de automação onde inclui automação de API/Web/Mobile e Mainframe</description>
+    <inceptionYear>2021</inceptionYear>
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>template.unico.aut</groupId>
+    <artifactId>template-unico-aut</artifactId>
+    <version>0.1</version>
+    <packaging>jar</packaging>
+
+    <properties>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <version.cucumber>3.0.2</version.cucumber>
+        <version.selenium>3.141.59</version.selenium>
+        <version.appium>3.1.0</version.appium>
+        <version.gjson>1.1.1</version.gjson>
+        <version.restAssured>4.0.0</version.restAssured>
+        <version.log4j>1.2.17</version.log4j>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.appium</groupId>
+            <artifactId>java-client</artifactId>
+            <version>${version.appium}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${version.selenium}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>${version.restAssured}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>${version.cucumber}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>${version.cucumber}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+            <version>${version.gjson}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>${version.log4j}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>
